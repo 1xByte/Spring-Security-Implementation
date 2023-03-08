@@ -25,6 +25,15 @@ public class userSer {
 		repo.save(user);
 
 	}
+
+	public void findUser(User user)
+	{
+
+		repo.findAll();
+
+
+
+	}
 	
 
 }
