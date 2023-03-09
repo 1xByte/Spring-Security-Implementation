@@ -7,6 +7,8 @@ import org.springframework.stereotype.Service;
 import com.test.db.model.User;
 import com.test.db.repo.userRepo;
 
+import java.util.List;
+
 @Service
 public class userSer {
 	
@@ -26,11 +28,13 @@ public class userSer {
 
 	}
 
-	public void findUser(User user)
+	public List<User> findUser(User user)
 	{
 
-		repo.findAll();
+	List<User> user1=	repo.findAll();
 
+
+return user1;
 
 
 	}
