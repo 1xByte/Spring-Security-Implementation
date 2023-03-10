@@ -28,16 +28,20 @@ public class userSer {
 
 	}
 
-	public List<User> findUser(User user)
-	{
+	public List<User> findUser(User user) {
 
-	List<User> user1=	repo.findAll();
-
-
-return user1;
+		List<User> user1 = repo.findAll();
 
 
+		return user1;
 	}
+
+	public String testUser(){
+		return  "okkkk";
+	}
+
+
+
 	
 
 }
