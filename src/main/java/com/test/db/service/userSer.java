@@ -8,6 +8,7 @@ import com.test.db.model.User;
 import com.test.db.repo.userRepo;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class userSer {
@@ -41,7 +42,12 @@ public class userSer {
 	}
 
 
+public User getByUserName(String name){
+		Optional<User> user= repo.findByUserName(name);
+		User user1=user.orElseThrow();
 
+		return user1;
+}
 	
 
 }
