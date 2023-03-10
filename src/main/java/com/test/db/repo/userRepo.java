@@ -10,5 +10,6 @@ import com.test.db.model.User;
 public interface userRepo extends JpaRepository<User, Integer>{
 
 	Optional<User> findByUserName(String username);
+	Optional<User> findByPassword(Integer id);
 
 }
